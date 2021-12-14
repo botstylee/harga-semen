@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal 2 Semen</title>
+</head>
+<body>
+  <script>
+    let merk = prompt("Masukan Merk")
+    let harga_utama = Number(prompt("Masukan Harga"))
+    let total = Number(prompt("Masukan Total Semen Dibeli"))
+    let harga = 0
+    if (total < 10) {
+      harga += 5000
+    } else {
+      harga -= harga_utama*(5/100)
+    }
+    harga += harga_utama
+    alert(`Merk: ${merk}\nJumlah: ${total}\nTotal Biaya: Rp.${harga}`)
+  </script>
+</body>
+</html>
